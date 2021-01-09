@@ -3,13 +3,13 @@ import { Button, Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import Header from "../components/header";
-import AgreedVector from "../assets/illustration/agreed-illus.png";
 
 const useStyles = makeStyles(() => ({
   paragraph: {
     textAlign: "left",
     fontSize: 18,
-    marginTop: 24,
+    marginTop: 320,
+    marginBottom: 10,
     fontWeight: "bold",
     color: "#0F657C",
   },
@@ -21,6 +21,7 @@ const useStyles = makeStyles(() => ({
   buttonPadding: {
     paddingLeft: 39,
     paddingRight: 39,
+    marginBottom: 24,
   },
   paddingHorizontal40: {
     paddingLeft: 40,
@@ -33,35 +34,35 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-function Agreed() {
+function OptionPerson() {
   const classes = useStyles();
   return (
-    <div className="Agreed">
+    <div className="OptionPerson">
       <Header />
       <Container maxWidth="xs">
-        <img src={AgreedVector} alt={AgreedVector} width="310" />
         <Container>
           <Typography
             className={`${classes.paragraph} ${classes.paddingHorizontal40}`}
           >
-            Terima kasih untuk persetujuannya.
+            Untuk siapa konsultasi ini dilakukan?
           </Typography>
         </Container>
-        <Container>
-          <Typography
-            className={`${classes.paragraph} ${classes.paddingHorizontal40}`}
-          >
-            Selanjutnya tim TELESEHAT akan menanyakan informasi terkait data
-            diri dan keluhan yang Anda rasakan.
-          </Typography>
-        </Container>
+
         <Container className={classes.buttonWrapper}>
-          <Link to="/option">
+          <Link to="/profile">
             <Button
               size="large"
               className={`buttonPrimary ${classes.buttonPadding}`}
             >
-              <span className={classes.textButton}>Lanjut</span>
+              <span className={classes.textButton}>Diri sendiri</span>
+            </Button>
+          </Link>
+          <Link to="/profile">
+            <Button
+              size="large"
+              className={`buttonPrimary ${classes.buttonPadding}`}
+            >
+              <span className={classes.textButton}>Orang lain</span>
             </Button>
           </Link>
         </Container>
@@ -70,4 +71,4 @@ function Agreed() {
   );
 }
 
-export default Agreed;
+export default OptionPerson;

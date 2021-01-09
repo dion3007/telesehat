@@ -7,3 +7,15 @@
   border-radius: 8px !important;
   color: #ffffff !important;
 }
+
+.buttonPrimaryOutlined {
+  border-color: #16b3ac !important;
+  border-radius: 8px !important;
+  color: #16b3ac !important;
+}
+
+.buttonPrimaryOutlined:focus {
+  background-color: #16b3ac !important;
+  border-radius: 8px !important;
+  color: #ffffff !important;
+}

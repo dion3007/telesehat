@@ -5,6 +5,8 @@ import Home from "../pages/Home";
 import ConsentAgreement from "../pages/ConsentAgreement";
 import Agreed from "../pages/Agreed";
 import Disagree from "../pages/Disagree";
+import OptionPerson from "../pages/OptionPerson";
+import DataProfile from "../pages/DataProfile";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route exact path="/agreement/disagree">
           <Disagree />
+        </Route>
+        <Route exact path="/option">
+          <OptionPerson />
+        </Route>
+        <Route exact path="/profile">
+          <DataProfile />
         </Route>
       </Switch>
     </div>

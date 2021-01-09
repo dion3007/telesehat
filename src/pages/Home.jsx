@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from "react";
 import { Button, Container, Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
@@ -36,8 +37,7 @@ function Home() {
           <Typography className={classes.paragraph}>
             Anda atau anggota keluarga Anda merasa tidak enak
             badan?Konsultasikan keluhannya di
-            <span style={{ color: "#0F657C" }}> TELESEHAT-Konsultasi</span>
-            .
+            <span style={{ color: "#0F657C" }}> TELESEHAT-Konsultasi</span>.
             Gratis!
           </Typography>
         </Container>

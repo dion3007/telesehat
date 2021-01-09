@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import Header from "../components/header";
-import AgreedVector from "../assets/illustration/agreed-illus.png";
+import FormDataProfile from "../components/formdataprofile";
+import FormDataAddress from "../components/formdataaddress";
 
 const useStyles = makeStyles(() => ({
   paragraph: {
     textAlign: "left",
     fontSize: 18,
-    marginTop: 24,
+    marginTop: 55,
+    marginBottom: 10,
     fontWeight: "bold",
     color: "#0F657C",
   },
@@ -21,6 +23,12 @@ const useStyles = makeStyles(() => ({
   buttonPadding: {
     paddingLeft: 39,
     paddingRight: 39,
+    marginBottom: 24,
+  },
+  cautionText: {
+    fontSize: 12,
+    fontStyle: "italic",
+    textAlign: "left",
   },
   paddingHorizontal40: {
     paddingLeft: 40,
@@ -29,45 +37,58 @@ const useStyles = makeStyles(() => ({
   buttonWrapper: {
     width: 300,
     textAlign: "right",
-    marginTop: 80,
+    marginTop: 40,
   },
 }));
 
-function Agreed() {
+function DataProfile() {
   const classes = useStyles();
+  const [initialPage, setInitialPage] = useState(true);
   return (
-    <div className="Agreed">
+    <div className="DataProfile">
       <Header />
       <Container maxWidth="xs">
-        <img src={AgreedVector} alt={AgreedVector} width="310" />
         <Container>
           <Typography
             className={`${classes.paragraph} ${classes.paddingHorizontal40}`}
+            variant="h4"
           >
-            Terima kasih untuk persetujuannya.
+            Silakan lengkapi informasi berikut ini :
           </Typography>
         </Container>
         <Container>
           <Typography
-            className={`${classes.paragraph} ${classes.paddingHorizontal40}`}
+            className={`${classes.cautionText} ${classes.paddingHorizontal40}`}
+            variant="h4"
           >
-            Selanjutnya tim TELESEHAT akan menanyakan informasi terkait data
-            diri dan keluhan yang Anda rasakan.
+            Informasi ini akan membantu tim TELESEHAT memberikan pertanyaan dan
+            rekomendasi faskes (jika dibutuhkan) yang sesuai bagi Anda.
           </Typography>
         </Container>
+        {initialPage ? <FormDataProfile /> : <FormDataAddress />}
         <Container className={classes.buttonWrapper}>
-          <Link to="/option">
+          {initialPage ? (
             <Button
               size="large"
               className={`buttonPrimary ${classes.buttonPadding}`}
+              onClick={() => setInitialPage(false)}
             >
               <span className={classes.textButton}>Lanjut</span>
             </Button>
-          </Link>
+          ) : (
+            <Link to="/agreement/agreed">
+              <Button
+                size="large"
+                className={`buttonPrimary ${classes.buttonPadding}`}
+              >
+                <span className={classes.textButton}>Lanjut</span>
+              </Button>
+            </Link>
+          )}
         </Container>
       </Container>
     </div>
   );
 }
 
-export default Agreed;
+export default DataProfile;
