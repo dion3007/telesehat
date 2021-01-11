@@ -24,6 +24,11 @@ code {
   border-radius: 8px !important;
 }
 
+.MuiDrawer-paper {
+  border-top-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

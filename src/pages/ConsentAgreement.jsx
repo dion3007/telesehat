@@ -6,7 +6,7 @@ import Header from "../components/header";
 
 const useStyles = makeStyles(() => ({
   paragraph: {
-    textAlign: "left", 
+    textAlign: "left",
     fontSize: 18,
     marginTop: 320,
     marginBottom: 10,

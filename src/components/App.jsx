@@ -7,6 +7,9 @@ import Agreed from "../pages/Agreed";
 import Disagree from "../pages/Disagree";
 import OptionPerson from "../pages/OptionPerson";
 import DataProfile from "../pages/DataProfile";
+import CovidScreening from "../pages/CovidScreening";
+import NonCovidScreening from "../pages/NonCovidScreening";
+import NonCovidResult from "../pages/NonCovidResult";
 
 function App() {
   return (
@@ -29,6 +32,15 @@ function App() {
         </Route>
         <Route exact path="/profile">
           <DataProfile />
+        </Route>
+        <Route exact path="/screening">
+          <CovidScreening />
+        </Route>
+        <Route exact path="/screening/non-covid">
+          <NonCovidScreening />
+        </Route>
+        <Route exact path="/result/non-covid">
+          <NonCovidResult />
         </Route>
       </Switch>
     </div>

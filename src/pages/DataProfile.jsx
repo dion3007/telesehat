@@ -76,7 +76,7 @@ function DataProfile() {
               <span className={classes.textButton}>Lanjut</span>
             </Button>
           ) : (
-            <Link to="/agreement/agreed">
+            <Link to="/screening">
               <Button
                 size="large"
                 className={`buttonPrimary ${classes.buttonPadding}`}
