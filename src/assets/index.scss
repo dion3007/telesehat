@@ -13,6 +13,7 @@ body {
   font-family: 'Nunito', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -27,6 +28,14 @@ code {
 .MuiDrawer-paper {
   border-top-left-radius: 30px !important;
   border-top-right-radius: 30px !important;
+}
+
+.MuiLinearProgress-barColorPrimary {
+  background-color: #16B3AC !important;
+}
+
+.MuiLinearProgress-root {
+  height: 8px !important;
 }
 
 /* Chrome, Safari, Edge, Opera */

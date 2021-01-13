@@ -10,6 +10,8 @@ import DataProfile from "../pages/DataProfile";
 import CovidScreening from "../pages/CovidScreening";
 import NonCovidScreening from "../pages/NonCovidScreening";
 import NonCovidResult from "../pages/NonCovidResult";
+import Questionnaire from "../pages/Questionnaire";
+import Finishing from "../pages/Finishing";
 
 function App() {
   return (
@@ -41,6 +43,12 @@ function App() {
         </Route>
         <Route exact path="/result/non-covid">
           <NonCovidResult />
+        </Route>
+        <Route exact path="/questionnaire">
+          <Questionnaire />
+        </Route>
+        <Route exact path="/finish">
+          <Finishing />
         </Route>
       </Switch>
     </div>

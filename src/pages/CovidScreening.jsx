@@ -95,7 +95,7 @@ function CovidScreening() {
               <span className={classes.textButton}>Ya</span>
             </Button>
           ) : (
-            <Link to="/profile">
+            <Link to="/questionnaire">
               <Button
                 size="large"
                 className={`buttonPrimary ${classes.buttonPadding}`}
@@ -104,7 +104,7 @@ function CovidScreening() {
               </Button>
             </Link>
           )}
-          <Link to={!positiveCase ? "/screening/non-covid" : "/profile"}>
+          <Link to={!positiveCase ? "/screening/non-covid" : "/questionnaire"}>
             <Button
               size="large"
               className={`buttonPrimary ${classes.buttonPadding}`}
