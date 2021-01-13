@@ -34,8 +34,8 @@ const useStyles = makeStyles(() => ({
     marginTop: 80,
   },
   buttonPadding: {
-    paddingLeft: 50,
-    paddingRight: 50,
+    paddingLeft: 60,
+    paddingRight: 60,
     marginBottom: 24,
   },
 }));
