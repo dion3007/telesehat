@@ -12,6 +12,8 @@ import NonCovidScreening from "../pages/NonCovidScreening";
 import NonCovidResult from "../pages/NonCovidResult";
 import Questionnaire from "../pages/Questionnaire";
 import Finishing from "../pages/Finishing";
+import MeetDoctor from "../pages/MeetDoctor";
+import ProfileFull from "../pages/ProfileFull";
 
 function App() {
   return (
@@ -49,6 +51,12 @@ function App() {
         </Route>
         <Route exact path="/finish">
           <Finishing />
+        </Route>
+        <Route exact path="/diagnose">
+          <MeetDoctor />
+        </Route>
+        <Route exact path="/fully/profile">
+          <ProfileFull />
         </Route>
       </Switch>
     </div>

@@ -10,7 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import SendIcon from "@material-ui/icons/Send";
 import { Link } from "react-router-dom";
 import Header from "../components/header";
-import ScreeningVector from "../assets/illustration/screening-illus.png";
+import ScreeningVector from "../assets/illustration/screening-illus.svg";
 
 const useStyles = makeStyles(() => ({
   paragraph: {

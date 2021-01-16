@@ -3,7 +3,7 @@ import { Button, Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import Header from "../components/header";
-import AgreedVector from "../assets/illustration/agreed-illus.png";
+import AgreedVector from "../assets/illustration/agreed-illus.svg";
 
 const useStyles = makeStyles(() => ({
   paragraph: {

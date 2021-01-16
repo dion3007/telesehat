@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import Header from "../components/header";
 import BottomDrawer from "../components/bottomdrawer";
-import ScreeningVector from "../assets/illustration/screening-illus.png";
+import ScreeningVector from "../assets/illustration/screening-illus.svg";
 
 const useStyles = makeStyles(() => ({
   paragraph: {

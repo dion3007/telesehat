@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { Link } from "react-router-dom";
 import Header from "../components/header";
-import Vector1 from "../assets/illustration/home-illus.png";
+import Vector1 from "../assets/illustration/home-illus.svg";
 import KemenkesLogo from "../assets/govLogo/kemenkes.png";
 import GermasLogo from "../assets/govLogo/germas.png";
 

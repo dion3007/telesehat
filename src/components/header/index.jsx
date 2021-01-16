@@ -6,7 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo-telesehatkonsultasi.png";
+import Logo from "../../assets/logo-telesehatkonsultasi.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
